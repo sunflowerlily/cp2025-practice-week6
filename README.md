@@ -3,57 +3,52 @@
 本仓库包含计算物理实践课程第六周的编程作业，涵盖拍频现象的数值模拟与数据分析。
 
 ## 目录结构
-```
-cp2025-practice-week5/
+```shell
+cp2025-practice-week6/
 ├── src/                                 # 源代码目录（学生实现）
-│   ├── waiting_times.py                 # 等待时间分布分析
-│   ├── random_walk.py                   # 随机行走轨迹模拟
-│   ├── endpoints_analysis.py            # 随机行走终点分布分析
-│   ├── mean_square_displacement.py      # 随机行走均方位移分析
-│   ├── displacement_distribution.py     # 随机行走位移分布分析
-│   └── poisson_simulation.py            # 泊松分布数值模拟
+│   ├── wien_displacement.py            # 维恩位移定律计算
+│   ├── maxwell_distribution.py          # 麦克斯韦速率分布计算
+│   ├── beats_simulation.py              # 拍频现象数值模拟
+│   ├── standing_wave.py                 # 驻波动画模拟
+│   └── spring_block.py                  # 弹簧物块运动模拟
 ├── results/                             # 结果目录（学生填写）
-│   ├── 等待时间分布实验报告.md            # 等待时间分布实验报告
-│   ├── 随机行走轨迹实验报告.md            # 随机行走轨迹实验报告
-│   ├── 随机行走终点分布实验报告.md         # 随机行走终点分布实验报告
-│   ├── 随机行走与均方位移之间关系实验报告.md # 均方位移实验报告
-│   ├── 随机行走位移分布实验报告.md         # 位移分布实验报告
-│   └── 泊松分布数值模拟实验报告.md         # 泊松分布实验报告
+│   ├── 维恩位移定律实验报告.md            # 维恩位移定律实验报告
+│   ├── 麦克斯韦速率分布实验报告.md         # 麦克斯韦速率分布实验报告
+│   ├── 拍频现象数值模拟实验报告.md         # 拍频现象实验报告
+│   ├── 驻波动画模拟实验报告.md            # 驻波实验报告
+│   └── 弹簧物块运动模拟实验报告.md         # 弹簧物块实验报告
 ├── solutions/                           # 参考解答目录
-│   ├── waiting_times_solution.py        # 等待时间分布参考解答
-│   ├── random_walk_solution.py          # 随机行走轨迹参考解答
-│   ├── endpoints_analysis_solution.py    # 随机行走终点分布参考解答
-│   ├── mean_square_displacement_solution.py # 均方位移参考解答
-│   ├── displacement_distribution_solution.py # 位移分布参考解答
-│   └── poisson_simulation_solution.py   # 泊松分布参考解答
+│   ├── wien_displacement_solution.py    # 维恩位移定律参考解答
+│   ├── maxwell_distribution_solution.py # 麦克斯韦速率分布参考解答
+│   ├── beats_simulation_solution.py     # 拍频现象参考解答
+│   ├── standing_wave_solution.py        # 驻波参考解答
+│   └── spring_block_solution.py         # 弹簧物块参考解答
 ├── tests/                               # 测试文件目录
-│   ├── test_waiting_times.py            # 等待时间分布测试
-│   ├── test_random_walk.py              # 随机行走轨迹测试
-│   ├── test_endpoints_analysis.py       # 随机行走终点分布测试
-│   ├── test_mean_square_displacement.py # 均方位移测试
-│   ├── test_displacement_distribution.py # 位移分布测试
-│   └── test_poisson_simulation.py       # 泊松分布测试
+│   ├── test_wien_displacement.py        # 维恩位移定律测试
+│   ├── test_maxwell_distribution.py     # 麦克斯韦速率分布测试
+│   ├── test_beats_simulation.py         # 拍频现象测试
+│   ├── test_standing_wave.py            # 驻波测试
+│   └── test_spring_block.py             # 弹簧物块测试
 ├── docs/                                # 文档目录
-│   ├── 等待时间分布.md                   # 等待时间分布实验说明
-│   ├── 随机行走轨迹.md                   # 随机行走轨迹实验说明
-│   ├── 绘制随机行走终点图像-项目说明.md     # 随机行走终点分布实验说明
-│   ├── 随机行走与均方位移之间的关系.md      # 均方位移实验说明
-│   ├── 随机行走位移分布.md                # 位移分布实验说明
-│   └── 泊松分布的数值模拟.md              # 泊松分布实验说明
+│   ├── 维恩位移定律.md                   # 维恩位移定律实验说明
+│   ├── 麦克斯韦速率分布律.md              # 麦克斯韦速率分布实验说明
+│   ├── 拍频现象数值模拟与分析.md          # 拍频现象实验说明
+│   ├── 驻波动画模拟项目.md               # 驻波实验说明
+│   └── 弹簧物块运动方程求解.md           # 弹簧物块实验说明
 ├── requirements.txt                     # 项目依赖
 └── README.md                            # 本文件
 ```
 
+
 ## 作业内容
 
-本次作业包含六个独立的随机过程模拟实验：
+本次作业包含五个独立的物理模拟实验：
 
-1. **等待时间分布分析**：研究稀有事件之间的等待时间分布。
-2. **随机行走轨迹模拟**：实现二维随机行走，可视化其轨迹。
-3. **随机行走终点分布**：分析多次随机行走的终点分布特性。
-4. **随机行走与均方位移**：探究均方位移与步数之间的关系。
-5. **随机行走位移分布**：分析随机行走的位移统计特性。
-6. **泊松分布数值模拟**：模拟泊松过程并与理论分布比较。
+1. **维恩位移定律计算**：研究黑体辐射的波长与温度关系
+2. **麦克斯韦速率分布计算**：模拟气体分子速率分布
+3. **拍频现象数值模拟**：研究两个相近频率叠加产生的拍频现象
+4. **驻波动画模拟**：可视化弦上驻波的形成过程
+5. **弹簧物块运动模拟**：研究简谐振动系统的动力学特性
 
 ## 使用说明
 
@@ -61,11 +56,12 @@ cp2025-practice-week5/
 ```bash
 # 安装依赖
 pip install -r requirements.txt
+
 # 运行所有测试
 python -m pytest tests/
 
-# 运行特定测试
-python -m pytest tests/test_waiting_times.py -v
+# 运行自动评分
+python .github/classroom/autograding.py
 ```
 ### 提交作业
 1. 完成 src/ 目录下的所有实现文件
@@ -73,7 +69,7 @@ python -m pytest tests/test_waiting_times.py -v
 3. 提交到GitHub仓库
 4. 在 results/ 目录下对应的markdown文件中上传程序运行结果，包括生成的图像文件和结果讨论
 ## 评分标准
-每个实验模块占总分的六分之一，总分为60分。评分将通过自动测试完成，测试通过即得满分。
+每个实验模块占总分的五分之一，总分为50分。评分将通过自动测试完成，测试通过即得满分。
 
 ## 参考资料
 - 《Python物理建模初学者指南》第六章
