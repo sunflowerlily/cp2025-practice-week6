@@ -64,7 +64,9 @@ def animate(i):
     # 提示：waveFunctions = [[x, y1], [x, y2], [x, y3]]可以帮助组织数据
 
     return lines
+if __name__ == '__main__':
+    # TODO: 创建动画对象并显示
+    # 提示：使用animation.FuncAnimation创建动画
+    # 提示：使用plt.show()显示动画
+    pass
 
-# TODO: 创建动画对象并显示
-# 提示：使用animation.FuncAnimation创建动画
-# 提示：使用plt.show()显示动画

@@ -67,10 +67,10 @@ def animate(i):
         lines[idx].set_data(waveFunctions[idx][0], waveFunctions[idx][1])
 
     return lines
-
-# 调用动画函数
-anim = animation.FuncAnimation(fig, animate, init_func=init,
+if __name__ == "__main__":
+    # 调用动画函数
+    anim = animation.FuncAnimation(fig, animate, init_func=init,
                                frames=200, interval=20, blit=True)
 
-plt.show()
+    plt.show()
     

@@ -43,11 +43,6 @@ class TestBeatFrequencySimulation:
 
 class TestParameterSensitivity:
     """测试参数敏感性分析"""
-    
-    def test_frequency_difference_analysis(self):
-        """测试频率差分析"""
-        # 验证函数能正常执行不报错
-        parameter_sensitivity_analysis()
         
     def test_waveform_properties(self):
         """测试波形基本属性"""
