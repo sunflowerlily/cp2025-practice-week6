@@ -7,8 +7,8 @@ import os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 # 导入待测试的函数
-from solutions.wien_displacement_solution import wien_equation, solve_wien_constant, calculate_temperature
-#from src.wien_displacement import wien_equation, solve_wien_constant, calculate_temperature
+#from solutions.wien_displacement_solution import wien_equation, solve_wien_constant, calculate_temperature
+from src.wien_displacement import wien_equation, solve_wien_constant, calculate_temperature
 
 def test_wien_equation():
     """测试维恩方程函数"""

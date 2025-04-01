@@ -4,7 +4,7 @@ import os
 
 # Add the parent directory to the Python path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-
+"""
 from solutions.maxwell_distribution_solution import (
     maxwell_distribution,
     percentage_0_to_vp,
@@ -19,7 +19,7 @@ from src.maxwell_distribution import (
     percentage_0_to_3_3vp,
     percentage_3e4_to_3e8,
     vp
-)"""
+)
 
 class TestMaxwellDistribution(unittest.TestCase):
 
