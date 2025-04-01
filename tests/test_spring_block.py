@@ -7,6 +7,7 @@ import os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from solutions.spring_block_solution import solve_ode_euler, spring_mass_ode_func, solve_ode_odeint
+from src.spring_block import solve_ode_euler, spring_mass_ode_func, solve_ode_odeint
 
 def test_solve_ode_euler():
     """测试欧拉法求解器"""

@@ -12,12 +12,11 @@ from pathlib import Path
 
 # 定义测试文件和分数
 TESTS = [
-    {"name": "等待时间分布分析", "file": "tests/test_waiting_times.py", "points": 10},
-    {"name": "随机行走轨迹模拟", "file": "tests/test_random_walk_trace.py", "points": 10},
-    {"name": "随机行走终点分布", "file": "tests/test_endpoints_analysis.py", "points": 10},
-    {"name": "随机行走均方位移", "file": "tests/test_mean_square_displacement.py", "points": 10},
-    {"name": "随机行走位移分布", "file": "tests/test_random_walk_displacement.py", "points": 10},
-    {"name": "泊松分布数值模拟", "file": "tests/test_poisson_simulation.py", "points": 10}
+    {"name": "维恩位移常数", "file": "tests/test_wien_displacement.py", "points": 10},
+    {"name": "麦克斯韦速率分布律", "file": "tests/test_maxwell_distribution.py", "points": 10},
+    {"name": "拍频现象数值模拟与分析", "file": "tests/test_beats_simulation.py", "points": 10},
+    {"name": "驻波动画模拟项目", "file": "tests/test_standing_wave.py", "points": 10},
+    {"name": "弹簧物块运动方程求解", "file": "tests/test_spring_block.py", "points": 10}
 ]
 
 def run_test(test_file):

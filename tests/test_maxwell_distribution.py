@@ -12,6 +12,14 @@ from solutions.maxwell_distribution_solution import (
     percentage_3e4_to_3e8,
     vp
 )
+"""
+from src.maxwell_distribution import (
+    maxwell_distribution,
+    percentage_0_to_vp,
+    percentage_0_to_3_3vp,
+    percentage_3e4_to_3e8,
+    vp
+)"""
 
 class TestMaxwellDistribution(unittest.TestCase):
 

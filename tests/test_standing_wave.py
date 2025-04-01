@@ -7,7 +7,7 @@ import os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from solutions.standing_wave_solution import sineWaveZeroPhi, init, animate, lines, x
-#from src.standing_wave_student import sineWaveZeroPhi, init, animate, lines, x
+#from src.standing_wave import sineWaveZeroPhi, init, animate, lines, x
 
 class TestStandingWave(unittest.TestCase):
     def test_sineWaveZeroPhi(self):

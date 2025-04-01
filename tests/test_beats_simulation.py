@@ -6,8 +6,8 @@ import os
 # Add the parent directory to the Python path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-#from solutions.beats_simulation_solution import simulate_beat_frequency, parameter_sensitivity_analysis
-from src.beats_simulation_student import simulate_beat_frequency, parameter_sensitivity_analysis
+from solutions.beats_simulation_solution import simulate_beat_frequency, parameter_sensitivity_analysis
+#from src.beats_simulation import simulate_beat_frequency, parameter_sensitivity_analysis
 
 class TestBeatFrequencySimulation:
     """测试拍频模拟功能"""
