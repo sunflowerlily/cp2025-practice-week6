@@ -16,7 +16,7 @@ TESTS = [
     {"name": "麦克斯韦速率分布律", "file": "tests/test_maxwell_distribution.py", "points": 10},
     {"name": "拍频现象数值模拟与分析", "file": "tests/test_beats_simulation.py", "points": 10},
     {"name": "驻波动画模拟项目", "file": "tests/test_standing_wave.py", "points": 10},
-    {"name": "弹簧物块运动方程求解", "file": "tests/test_spring_block.py", "points": 10}
+    {"name": "弹簧物块运动方程求解", "file": "tests/test_spring_block.py", "points": 10},
     {"name": "牛顿环的干涉图样", "file": "tests/test_newton_rings.py", "points": 10}
 ]
 
