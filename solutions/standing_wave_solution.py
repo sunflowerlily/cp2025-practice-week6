@@ -72,5 +72,6 @@ if __name__ == "__main__":
     anim = animation.FuncAnimation(fig, animate, init_func=init,
                                frames=200, interval=20, blit=True)
 
+    anim.save("standing_wave.gif", writer="pillow")
     plt.show()
     
